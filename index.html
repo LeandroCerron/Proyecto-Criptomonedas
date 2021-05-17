@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency exchanger</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="one-half column">
+                <img src="img/cryptomonedas.png">
+            </div>
+            <div class="one-half column">
+                <form id="formulario">
+                    <div class="row">
+                        <label>Choose your currency</label>
+                        <select
+                            class="u-full-width"
+                            id="currency"
+                            name="currency"
+                        >
+                                <option value="">Choose your currency</option>
+                                <option value="USD">US dollar</option>
+                                <option value="ARG">Argentine peso</option>
+                                <option value="MXN">Mexican peso</option>
+                                <option value="GBP">Pounds</option>
+                                <option value="EUR">Euros</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                    <div>
+                        <label>Choose your currency</label>
+                        <select 
+                            class="u-full-width"
+                            id="criptocurrencies"
+                            name="criptocurrencies"
+                        >
+                            <option value="" disabled selected>Choose your criptocurrency</option>
+                        </select>
+                    </div>
+                    </div>
+                    <input class="button-primary u-full-width" type="submit" value="Quote Currency" />
+
+                    <div id="resultado" class="resultado"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
